@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <h2>로그인</h2>
+    <form method="post" class="post-form" action="/login/">
+        {% csrf_token %}
+        {% include "form_errors.html" %}
+        <div class="form-group">
+            <label for="username">사용자ID:</label>
+            <input type="text" class="form-control" id="username"  name="username">
+        </div>
+        <div class="form-group">
+            <label for="password">비밀번호:</label>
+            <input type="password" class="form-control" id="password"  name="password">
+        </div>
+        <button type="submit" class="btn btn-outline-danger">로그인하기</button>
+    </form>
+</div>
+{% endblock %}

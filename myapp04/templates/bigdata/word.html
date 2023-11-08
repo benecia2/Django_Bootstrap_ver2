@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container my-3">
+    <img src="{% get_static_prefix %}images/{{img_data}}" width="600" height="400">
+
+</div>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!-- {% get_static_prefix %} /경로/파일명.확장자 -->
+<div class="container  my-3">
+    <img src="{% get_static_prefix %}images/{{img_data}}" width="800" height="600">
+
+
+</div>
+{% endblock %}
